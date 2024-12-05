@@ -1,0 +1,17 @@
+[workspace]
+
+members = [
+    "tokio_kcp",
+    "kcp_client",
+    "kcp_server",
+]
+
+# https://www.aloxaf.com/2018/09/reduce_rust_size/
+[profile.release]
+debug = false # 去除调试信息
+panic = "abort"
+lto = true
+codegen-units = 1
+strip = true        # Strip symbols from binary*
+opt-level = "z"  # 最小化二进制文件大小
+
