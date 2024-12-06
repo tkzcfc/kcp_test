@@ -4,6 +4,8 @@ members = [
     "tokio_kcp",
     "kcp_client",
     "kcp_server",
+    "tcp_client",
+    "tcp_server",
 ]
 
 # https://www.aloxaf.com/2018/09/reduce_rust_size/

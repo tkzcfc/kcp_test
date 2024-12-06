@@ -12,7 +12,6 @@ use tokio_kcp::{KcpConfig, KcpListener};
 async fn main() {
     env_logger::Builder::from_env(env_logger::Env::default().default_filter_or("debug")).init();
 
-
     let config = KcpConfig::default();
 
     let server_addr = "0.0.0.0:3100".parse::<SocketAddr>().unwrap();
